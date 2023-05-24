@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formList</title>
+    <script src="constants.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form name="formList" class="myForm">
+      <h1 style="text-align: center">עם מי יש לנו הכבוד ? </h1>
+      <h2 style="text-align: center">האדם שעבורו מוגשת הבקשה :</h2>
+      <div class="inputBox">
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="שם פרטי" /><br />
+        <span style="display: none" class="error" id="name"></span>
+      </div>
+      <div class="inputBox">
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="שם משפחה" /><br />
+        <span style="display: none" class="error" id="last_name"></span>
+      </div>
+
+      <div class="inputBox">
+        <input
+          autocomplete="off"
+          inputmode="numeric"
+          type="number"
+          name="id"
+          id="id_container"
+          placeholder="תעודת זהות" /><br />
+        <span style="display: none" class="error" id="idPass"></span>
+        <span style="display: none" class="error" id="errorpASS"></span>
+      </div>
+
+      <select name="id_select" id="id_select" onchange="updateInputId()">
+        <option value="id">תעודת זהות</option>
+        <option value="passport">דרכון</option>
+      </select>
+
+      <!-- test for id and passport -->
+
+      <br />
+      <select>
+        <option value="hebrew">עברית</option>
+        <option value="arabic">ערבית</option>
+      </select>
+      <select disabled>
+        <option value="israel">ישראל</option>
+      </select>
+      <br />
+      <div class="inputBoxCheck">
+        <input type="checkbox" name="check" id="check" />
+        <p>
+          אני אפוטרופוס וברצוני להירשם בשם האדם שנמצא תחת האפוטרופוסות שלי
+        </p>
+      </div>
+      <div class="btnPosition">
+        <button type="button" onclick="checkForm()">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
