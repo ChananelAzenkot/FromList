@@ -146,8 +146,13 @@ and (-webkit-device-pixel-ratio: 3) {
         height: 20px;
         margin-top: 0;
     }
-    .inputBoxCheck{
+    .inputBoxCheck {
         width: 240px;
+        height: 40px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
     }
     .inputBoxCheck p{
         font-size: 10px;
