@@ -1,18 +1,18 @@
-body{
+body {
     align-content: center;
     justify-content: center;
     display: flex;
     font-family: Tahoma;
 }
+
 .myForm {
     width: 570px;
     background-image: linear-gradient(to bottom right, #d6e7e1, #86d1be);
     color: black;
     border-radius: 20px;
-
     padding: 20px;
     box-shadow: 1px 2px 6px black;
-    display:inline-block;
+    display: inline-block;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -33,15 +33,15 @@ body{
     margin: 5px;
 }
 
-select{
+select {
     height: 30px;
     width: 200px;
     margin-top: 10px;
-    margin-right: 30px;
     border-radius: 5px;
     border: 1px solid #cdd199;
 }
-#send{
+
+#send {
     height: 30px;
     width: 100px;
     margin-top: 100px;
@@ -50,36 +50,40 @@ select{
     align-items: center;
     color: white;
 }
-#send:active{
+
+#send:active {
     background-color: rgb(250, 250, 250);
     color: black;
 }
 
-#check{
+#check {
     width: 30px;
     padding: 5px;
     margin-top: 10px;
     color: white;
 
 }
-.inputBoxCheck{
+
+.inputBoxCheck {
     height: 55px;
     width: 570px;
     display: flex;
     position: relative;
     margin-top: 40px;
-    margin-right:-5px;
+    margin-right: -5px;
     background-color: #9cb2ac;
     box-shadow: 1px 2px 6px black;
     border-radius: 10px;
     padding: 5px;
 
 }
-.inputBoxCheck p{
+
+.inputBoxCheck p {
     margin-top: 16px;
     font-size: 14px;
     font-weight: bold;
 }
+
 .error {
     width: 200px;
     color: red;
@@ -91,14 +95,14 @@ select{
     margin-right: 200px;
 }
 
-.btnPosition{
+.btnPosition {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-button{
+button {
     height: 50px;
     width: 80px;
     margin-top: 10px;
@@ -114,7 +118,7 @@ button{
     box-shadow: 1px 2px 6px black;
 }
 
-button:active{
+button:active {
     background-color: black;
     color: white;
     font-size: 22px;
@@ -122,30 +126,36 @@ button:active{
     text-shadow: 1px 2px 6px white;
     box-shadow: 1px 2px 6px white;
 }
-@media only screen and (device-width: 428px) 
-and (device-height: 926px) 
-and (-webkit-device-pixel-ratio: 3) {
-    body{
-        align-content: none;
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    body {
+        width: 275px;
+        display: flex;
         justify-content: center;
-        font-family: Tahoma;
+        align-items: center;
+        text-align: center;
     }
-    .myForm{
+
+    .myForm {
         width: 240px;
-        margin:0;
+        margin: 0;
     }
-    .myForm h1{
+
+    .myForm h1 {
         font-size: 30px;
-        margin-top:0 ;
+        margin-top: 0;
     }
-    .myForm h2{
+
+    .myForm h2 {
         font-size: 16px;
     }
-    .myForm input{
+
+    .myForm input {
         width: 230px;
         height: 20px;
         margin-top: 0;
     }
+
     .inputBoxCheck {
         width: 240px;
         height: 40px;
@@ -154,29 +164,35 @@ and (-webkit-device-pixel-ratio: 3) {
         text-align: center;
         align-items: center;
     }
-    .inputBoxCheck p{
+
+    .inputBoxCheck p {
         font-size: 10px;
     }
-    .btnPosition{
+
+    .btnPosition {
         margin-top: 10px;
     }
-    button{
+
+    button {
         height: 30px;
         width: 50px;
         font-size: 10px;
     }
-    #send{
+
+    #send {
         height: 30px;
         width: 50px;
         font-size: 10px;
     }
-    #check{
+
+    #check {
         width: 20px;
         padding: 5px;
         margin-top: 10px;
         color: white;
     }
-    .error{
+
+    .error {
         width: 120px;
         font-size: 10px;
         margin-right: 60px;
